@@ -16,3 +16,10 @@ Script que lista los últimos diez ficheros modificados de un directorio y sus c
 Funciona ejecutando el script dentro del directorio a listar o pasándole la ruta como parámetro.
 
 Utilizado para migrar una instalación de Subversion de unos 100GB, manteniéndose la instalación de producción activa y migrando de nuevo únicamente los repositorios modificados.
+
+# sieve-autorespuesta.sh
+Script que gestiona scripts de Sieve para activar/desactivar mensajes de autorespuesta en el servidor de correo Dovecot. Esto permite configurar mensajes de ausencia o vacaciones de manera fácil en el lado del servidor.
+
+El script pide los parámetros usuario, fecha de inicio y fecha de fin. También permite personalizar el asunto o cuerpo del mensaje, pudiendo dejar un mensaje por defecto si se desea.
+
+Para activarlo/desactivar se crean tareas at que renombran el fichero .dovecot.sieve y notifica a través de correo electrónico.
