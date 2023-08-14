@@ -6,7 +6,7 @@
 
 currentdate=`date +"%Y%m%d"` # Extrae fecha actual
 executedate='20211231' # Especificar fecha que debe ejecutarse
-value="abc123def456" # Cadena presente en el nuevo athento.crt
+value="abc123def456" # Cadena presente en el fichero.
 
 if [ ${executedate} = ${currentdate} ]; then
 
